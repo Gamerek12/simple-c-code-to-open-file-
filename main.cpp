@@ -5,16 +5,16 @@
 using namespace std;
 
 int main() {
-  // Otwórz plik tekstowy "dane.txt".
-  ifstream plik("dane.txt");
+  // Otwï¿½rz plik tekstowy "dane.txt".
+  ifstream plik("plik.txt");
 
-  // SprawdŸ, czy plik zosta³ pomyœlnie otwarty.
+  // Sprawdï¿½, czy plik zostaï¿½ pomyï¿½lnie otwarty.
   if (!plik.is_open()) {
-    cerr << "Nie uda³o siê otworzyæ pliku!" << endl;
+    cerr << "Nie otworzono pliku!!!" << endl;
     return 1;
   }
 
-  // WyprowadŸ dane z pliku tekstowego po jednej linii.
+  // Wyprowadï¿½ dane z pliku tekstowego po jednej linii.
   string linia;
   while (getline(plik, linia)) {
     cout << linia << endl;
